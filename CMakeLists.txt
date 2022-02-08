@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.14)
 
-project(cminpack-f VERSION "0.1.1" LANGUAGES Fortran C)
+project(cminpack-f VERSION "0.1.0" LANGUAGES Fortran C)
 
 include(cmake/CPM.cmake)
 
