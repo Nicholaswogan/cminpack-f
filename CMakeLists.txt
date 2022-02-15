@@ -1,13 +1,15 @@
 cmake_minimum_required(VERSION 3.14)
 
-project(cminpack-f VERSION "0.1.1" LANGUAGES Fortran C)
+project(cminpack-f VERSION "0.1.2" LANGUAGES Fortran C)
 
 include(cmake/CPM.cmake)
 
 CPMAddPackage(
   NAME cminpack
   VERSION 1.3.8
-  OPTIONS "CMINPACK_PRECISION d"
+  OPTIONS 
+    "CMINPACK_PRECISION d"
+    "USE_BLAS OFF"
   GITHUB_REPOSITORY "devernay/cminpack"
   GIT_TAG "v1.3.8"
   EXCLUDE_FROM_ALL ON
